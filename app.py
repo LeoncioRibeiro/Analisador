@@ -103,7 +103,7 @@ with col2:
 
 # --- Parâmetros ---
 st.subheader("3. Parâmetros de Análise")
-st.markdown("Selecione os parâmetros que deseja equalizar, por exemplo Ano 2026, do Período 1 ao Período 3.")
+st.markdown("Selecione os parâmetros que deseja equalizar, por exemplo, Ano 2026, do Período 1 ao Período 3.")
 col_ano, col_p_ini, col_p_fim = st.columns(3)
 with col_ano:
     ano_val = st.number_input("Ano para atualizar", step=1, format="%d", value=2026)
@@ -157,4 +157,5 @@ if st.button("Executar Análise", type="primary", use_container_width=True):
     else:
 
         st.warning("Por favor, faça o upload dos dois arquivos (Orçamento e Gastos) para continuar.")
+
 
